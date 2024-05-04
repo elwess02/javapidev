@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" stylesheets="@aa.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListLog">
+    <children>
+      <ImageView fitHeight="698.0" fitWidth="1200.0" pickOnBounds="true">
+         <image>
+            <Image url="@bfcenter.jpg" />
+         </image>
+      </ImageView>
+
+        <Text fill="#ff7300" layoutX="332.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Evenements " textAlignment="CENTER" wrappingWidth="618.936767578125">
+            <font>
+                <Font name="Bell MT" size="49.0" />
+            </font>
+        </Text>
+        <HBox />
+        <TableView fx:id="list_log" layoutX="31.0" layoutY="166.0" prefHeight="456.0" prefWidth="1138.0">
+            <columns>
+                <TableColumn fx:id="log_nom" prefWidth="75.0" text="Nom" />
+                <TableColumn fx:id="log_date" prefWidth="75.0" text="date" />
+                <TableColumn fx:id="log_heure" prefWidth="102.0" text="heure" />
+                <TableColumn fx:id="log_dure" prefWidth="89.0" text="dure" />
+                <TableColumn fx:id="log_nbreparti" prefWidth="91.0" text="nbreparticipants" />
+                <TableColumn fx:id="log_lieu" prefWidth="93.0" text="lieu" />
+                <TableColumn fx:id="log_type" prefWidth="116.0" text="type" />
+                <TableColumn fx:id="log_oragnisateur" prefWidth="95.0" text="Organisateur" />
+                <TableColumn fx:id="log_prix" prefWidth="103.0" text="prix" />
+                <TableColumn fx:id="log_img" prefWidth="137.0" text="image" />
+                <TableColumn fx:id="action" prefWidth="161.0" text="Action" />
+            </columns>
+        </TableView>
+      <Button layoutX="1036.0" layoutY="129.0" mnemonicParsing="false" onAction="#printer" prefHeight="36.0" prefWidth="133.0" text="Print" />
+         <TextField fx:id="searchField" layoutX="286.0" layoutY="128.0" prefHeight="38.0" prefWidth="390.0" promptText="Search..." />
+         <Button layoutX="676.0" layoutY="127.0" onAction="#handleSearch" prefHeight="38.0" prefWidth="94.0" text="Search" />
+      <Button fx:id="BACKBUTTON" layoutX="31.0" layoutY="13.0" mnemonicParsing="false" onAction="#BACKTOAJOUT" text="&lt;" />
+    </children>
+</AnchorPane>

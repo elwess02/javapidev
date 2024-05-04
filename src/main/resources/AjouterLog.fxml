@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="731.0" style="-fx-background-color: white;" stylesheets="@aa.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterLog">
+    <children>
+
+        <ImageView fitHeight="700.0" fitWidth="731.0" pickOnBounds="true">
+            <image>
+                <Image url="@bfcenter.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="142.0" layoutY="174.0" prefHeight="17.0" prefWidth="149.0" text="Nom" />
+        <Text fill="#ffa10a" layoutX="86.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un Evenement " textAlignment="CENTER" wrappingWidth="478.13671875">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+        <TextField fx:id="NomTextField" layoutX="142.0" layoutY="198.0" />
+        <Label layoutX="142.0" layoutY="229.0" prefHeight="17.0" prefWidth="124.0" text="Date" />
+        <TextField fx:id="dateTextField" layoutX="142.0" layoutY="251.0" />
+        <ComboBox fx:id="nbredeparicipantsBox" layoutX="141.0" layoutY="324.0" prefWidth="150.0" />
+        <Label layoutX="142.0" layoutY="361.0" prefHeight="17.0" prefWidth="124.0" text="lieu" />
+        <Label layoutX="142.0" layoutY="299.0" prefHeight="17.0" prefWidth="124.0" text="nbre de participants" />
+        <Label layoutX="364.0" layoutY="229.0" prefHeight="17.0" prefWidth="124.0" text="Dure" />
+        <TextField fx:id="dureTextField" layoutX="360.0" layoutY="251.0" />
+        <Button layoutX="359.0" layoutY="454.0" mnemonicParsing="false" onAction="#image" prefHeight="25.0" prefWidth="150.0" text="Upload image" />
+        <Label layoutX="364.0" layoutY="436.0" prefHeight="17.0" prefWidth="124.0" text="Image" />
+        <Button layoutX="522.0" layoutY="640.0" mnemonicParsing="false" onAction="#Afficher" prefHeight="25.0" prefWidth="124.0" text="Afficher Evenement" />
+        <Button layoutX="86.0" layoutY="640.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="25.0" prefWidth="124.0" text="Ajouter Evenement" />
+        <ImageView fx:id="imagview" fitHeight="121.0" fitWidth="160.0" layoutX="256.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="364.0" layoutY="174.0" prefHeight="17.0" prefWidth="85.0" text="heure" />
+        <TextField fx:id="prixTextField" layoutX="360.0" layoutY="324.0" />
+        <Label layoutX="364.0" layoutY="299.0" prefHeight="17.0" prefWidth="124.0" text="Prix" />
+      <TextField fx:id="heureTextField1" layoutX="360.0" layoutY="198.0" />
+      <TextField fx:id="organisateurTextField1" layoutX="360.0" layoutY="388.0" />
+      <TextField fx:id="lieuTextField3" layoutX="141.0" layoutY="388.0" />
+      <Label layoutX="142.0" layoutY="427.0" prefHeight="17.0" prefWidth="124.0" text="type" />
+      <Label layoutX="364.0" layoutY="361.0" prefHeight="17.0" prefWidth="124.0" text="Organisateur" />
+      <Button layoutX="292.0" layoutY="640.0" mnemonicParsing="false" onAction="#Reservation" prefHeight="25.0" prefWidth="124.0" text="Reservation" />
+      <Button fx:id="mete" layoutX="547.0" layoutY="59.0" mnemonicParsing="false" onAction="#meteo" prefHeight="75.0" prefWidth="98.0" text="Meteo" />
+      <ComboBox fx:id="typeBox" layoutX="141.0" layoutY="454.0" prefWidth="150.0" />
+      <Button fx:id="map" layoutX="547.0" layoutY="145.0" mnemonicParsing="false" onAction="#map" prefHeight="75.0" prefWidth="98.0" text="Map" />
+    </children>
+</AnchorPane>
